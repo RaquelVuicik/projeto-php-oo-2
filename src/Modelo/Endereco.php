@@ -1,30 +1,29 @@
 <?php
 
+namespace Raquel\Banco\Modelo;
 class Endereco
 {
     public function __construct(private string $cidade, private string $bairro, private string $rua, private string $numero)
     {
     }
 
-    public function recuperaCidade(): string
+    public function recuperarCidade(): string
     {
         return $this->cidade;
     }
 
-    public function recuperaBairro(): string
+    public function recuperarBairro(): string
     {
         return $this->bairro;
     }
 
-    public function recuperaRua(): string
+    public function recuperarRua(): string
     {
         return $this->rua;
     }
 
-    public function recuperaNumero(): string
+    public function recuperarNumero(): string
     {
         return $this->numero;
     }
-
-
 }
