@@ -12,7 +12,8 @@ $conta = new Conta(
         new CPF('123.456.789-00'),
         'Raquel Vuicik',
         new Endereco('Curitiba', 'Centro', 'Rua da Flores', '37', 'SP', '12345-678')
-    )
+    ),
+    2
 );
 $conta->depositar(500);
 $conta->sacar(100);
