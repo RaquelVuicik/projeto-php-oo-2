@@ -2,7 +2,9 @@
 
 namespace Raquel\Banco\Modelo\Funcionario;
 
-class Diretor extends Funcionario
+use Raquel\Banco\Modelo\Autenticavel;
+
+class Diretor extends Funcionario implements Autenticavel
 {
     public function calcularBonificacao(): float
     {
