@@ -4,7 +4,7 @@ namespace Raquel\Banco\Modelo;
 
 use Raquel\Banco\Modelo\CPF;
 
-class Pessoa
+abstract class Pessoa
 {
     protected string $nome;
     private CPF $cpf;

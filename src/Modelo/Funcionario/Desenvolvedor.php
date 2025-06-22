@@ -8,4 +8,9 @@ class Desenvolvedor extends Funcionario
     {
         $this->receberAumento($this->recuperarSalario() * 0.75); // Aumento de 75% do salário atual
     }
+
+    public function calcularBonificacao(): float
+    {
+        return 500.0;
+    }
 }
