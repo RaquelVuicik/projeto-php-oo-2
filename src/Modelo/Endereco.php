@@ -10,6 +10,7 @@ namespace Raquel\Banco\Modelo;
  */
 final class Endereco
 {
+    use AcessoPropriedades;
     public function __construct(private string $cidade, private string $bairro, private string $rua, private string $numero)
     {
     }
@@ -37,12 +38,5 @@ final class Endereco
     public function __toString(): string
     {
         return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
-    }
-
-    public function __get(string $nomeAtributo)
-    {
-        // recuperarRua
-        $metodo = 'recuperar' . ucfirst($nomeAtributo);
-        return $this->$metodo();
     }
 }
