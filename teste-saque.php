@@ -1,11 +1,7 @@
 <?php
 
-use Raquel\Banco\Modelo\Conta\ContaPoupanca;
-use Raquel\Banco\Modelo\Conta\ContaCorrente;
-use Raquel\Banco\Modelo\Conta\Conta;
-use Raquel\Banco\Modelo\Conta\Titular;
-use Raquel\Banco\Modelo\CPF;
-use Raquel\Banco\Modelo\Endereco;
+use Raquel\Banco\Modelo\Conta\{ContaPoupanca, ContaCorrente, Titular};
+use Raquel\Banco\Modelo\{CPF, Endereco};
 
 require_once 'autoload.php';
 
