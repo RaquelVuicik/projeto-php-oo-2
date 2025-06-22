@@ -18,6 +18,10 @@ $outroEndereco = new Endereco(
     '410'
 );
 
+echo $umEndereco->cidade;
+$umEndereco->
+exit();
+
 echo $umEndereco . PHP_EOL;
 echo $outroEndereco;
 
