@@ -8,7 +8,7 @@ namespace Raquel\Banco\Modelo;
  * @property-read string $rua
  * @property-read string $numero
  */
-class Endereco
+final class Endereco
 {
     public function __construct(private string $cidade, private string $bairro, private string $rua, private string $numero)
     {

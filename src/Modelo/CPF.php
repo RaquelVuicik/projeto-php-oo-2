@@ -1,7 +1,7 @@
 <?php
 
 namespace Raquel\Banco\Modelo;
-class CPF
+final class CPF
 {
     private $numero;
 

@@ -11,7 +11,7 @@ abstract class Pessoa
     public function __construct(string $nome, CPF $cpf)
     {
 
-        $this->validarNomeTitular($nome);
+        $this->validarNome($nome);
         $this->nome = $nome;
         $this->cpf = $cpf;
     }
@@ -26,7 +26,7 @@ abstract class Pessoa
         return $this->cpf->recuperarNumero();
     }
 
-    protected function validarNomeTitular(string $nomeTitular)
+    final protected function validarNome(string $nomeTitular)
     {
         if (strlen($nomeTitular) < 5) {
             echo "Nome precisa ter pelo menos 5 caracteres";

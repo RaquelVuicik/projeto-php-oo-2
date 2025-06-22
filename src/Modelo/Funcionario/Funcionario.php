@@ -18,7 +18,7 @@ abstract class Funcionario extends Pessoa
 
     public function alterarNome(string $nome): void
     {
-        $this->validarNomeTitular($nome);
+        $this->validarNome($nome);
         $this->nome = $nome;
     }
 
